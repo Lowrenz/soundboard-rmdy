@@ -57,43 +57,132 @@
 </head>
 
 <body>
-  <div
-    uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+  <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
     <nav class="uk-navbar-container uk-margin" uk-navbar>
       <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+        <a class="uk-navbar-item uk-logo" href="#"><img src="favicon-32x32.png" alt="RMDY Logo">&nbsp;&nbsp;
+          Soundboard</a>
+      </div>
+      <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
-          <li class="uk-active"><a href="#">Active</a></li>
-          <li><a href="#">Item</a></li>
+          <li class="uk-active"><a href="#">Category 1</a></li>
+          <li><a href="#">Category 2</a></li>
+          <li><a href="#">Category 3</a></li>
+          <li><a href="#">Category 4</a></li>
         </ul>
       </div>
     </nav>
   </div>
-  <div class="container">
-    <div class="player">
-      <section>
-        <audio class="chewbacca" title="Chewbacca Audio Clip">
-          <source src="audio/chewbacca.mp3" />
-          <source src="audio/chewbacca.ogg" />
-          <source src="audio/chewbacca.m4a" />
-        </audio>
-        <audio class="angry" title="Don't Drive Angry Clip">
-          <source src="audio/angry.mp3" />
-          <source src="audio/angry.ogg" />
-          <source src="audio/angry.wav" />
-        </audio>
-        <audio class="luck" title="No Such Thing as Luck Clip">
-          <source src="audio/luck.mp3" />
-          <source src="audio/luck.wav" />
-        </audio>
-        <audio class="raven" title="Great Odin's Raven! Clip">
-          <source src="audio/raven.mp3" />
-          <source src="audio/raven.ogg" />
-          <source src="audio/raven.wav" />
-        </audio>
-      </section>
-    </div> <!-- /player -->
-  </div> <!-- /container -->
+  <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+    data-src="img/chewbacca.png" uk-img>
+    <h1>Background Image</h1>
+  </div>
+  <div class="uk-container uk-container-xlarge">
+    <section id="category1">
+      <h2 class="uk-heading-small">Category 1</h2>
+      <div class="uk-child-width-1-2@m" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img src="img/chewbacca.png" alt="">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Media Top</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <section>
+                <audio class="chewbacca" title="Chewbacca Audio Clip">
+                  <source src="audio/chewbacca.mp3" />
+                  <source src="audio/chewbacca.ogg" />
+                  <source src="audio/chewbacca.m4a" />
+                  <source src="audio/chewbacca.wav" />
+                </audio>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img src="img/chewbacca.png" alt="">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Media Bottom</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <section>
+                <audio class="chewbacca" title="Chewbacca Audio Clip">
+                  <source src="audio/chewbacca.mp3" />
+                  <source src="audio/chewbacca.ogg" />
+                  <source src="audio/chewbacca.m4a" />
+                  <source src="audio/chewbacca.wav" />
+                </audio>
+              </section>
+            </div>
+            <div class="uk-card-footer">
+              <a href="#" class="uk-button uk-button-text">Play</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img src="img/chewbacca.png" alt="">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Media Bottom</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <section>
+                <audio class="chewbacca" title="Chewbacca Audio Clip">
+                  <source src="audio/chewbacca.mp3" />
+                  <source src="audio/chewbacca.ogg" />
+                  <source src="audio/chewbacca.m4a" />
+                  <source src="audio/chewbacca.wav" />
+                </audio>
+              </section>
+            </div>
+            <div class="uk-card-footer">
+              <a href="#" class="uk-button uk-button-text">Play</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img src="img/chewbacca.png" alt="">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Media Bottom</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <section>
+                <audio class="chewbacca" title="Chewbacca Audio Clip">
+                  <source src="audio/chewbacca.mp3" />
+                  <source src="audio/chewbacca.ogg" />
+                  <source src="audio/chewbacca.m4a" />
+                  <source src="audio/chewbacca.wav" />
+                </audio>
+              </section>
+            </div>
+            <div class="uk-card-footer">
+              <a href="#" class="uk-button uk-button-text">Play</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <section id="category2">
+    <h2 class="uk-heading-small">Category 2</h2>
+    </div>
+  </section>
+  <section id="category3">
+    <h2 class="uk-heading-small">Category 3</h2>
+  </section>
+  <section id="category4">
+    <h2 class="uk-heading-small">Category 4</h2>
+  </section>
+  <section id="category5">
+    <h2 class="uk-heading-small">Category 5</h2>
+  </section>
+  </div>
 </body>
 
 </html>
