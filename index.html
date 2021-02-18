@@ -5,10 +5,11 @@
 <!--[if gt IE 9]><!-->
 <html class="no-js" lang="nl">
 <!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="application-name" content="RMDY Soundboard">
   <meta name="description" content="Soundboard made by team 'Kung Fu Pandas' for the weekly RMDY challenges">
@@ -22,12 +23,12 @@
   <meta name="geo.position" content="51.14869;4.436063" />
   <meta name="ICBM" content="51.14869, 4.436063" />
   <link rel="canonical" href="https://lorenzgillisjans.com/rmdy-soundboard">
-  <link rel="author" href="https://lorenzgillisjans.com/rmdy-soundboard/humans.txt">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://lorenzgillisjans.com/rmdy-soundboard/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://lorenzgillisjans.com/rmdy-soundboard/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://lorenzgillisjans.com/rmdy-soundboard/favicon-16x16.png">
-  <link rel="manifest" href="https://lorenzgillisjans.com/rmdy-soundboard/site.webmanifest">
-  <link rel="mask-icon" href="https://lorenzgillisjans.com/rmdy-soundboard/safari-pinned-tab.svg" color="#000000">
+  <link rel="author" href="humans.txt">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:url" content="https://lorenzgillisjans.com/rmdy-soundboard">
@@ -49,13 +50,25 @@
   <meta name="twitter:image:alt" content="A simple image showing the RMDY logo and the title 'Soundboard'">
   <meta name="mobile-web-app-capable" content="yes">
   <title>RMDY Soundboard</title>
-  <base href="https://lorenzgillisjans.com/rmdy-soundboard">
+  <!-- <base href="https://lorenzgillisjans.com/rmdy-soundboard"> -->
   <link rel="stylesheet" href="css/uikit.min.css">
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
 </head>
 
 <body>
+  <div
+    uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+        <ul class="uk-navbar-nav">
+          <li class="uk-active"><a href="#">Active</a></li>
+          <li><a href="#">Item</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   <div class="container">
     <div class="player">
       <section>
